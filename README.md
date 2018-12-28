@@ -1,7 +1,12 @@
 
+
 # TADBoundaryDectector
 
 Detection of boundaries of TADs (Topologically associated domains) using Deep Learning
+
+## Models.py
+
+Contains the deep learning models
 
 ## Example Sequence Files 
 
