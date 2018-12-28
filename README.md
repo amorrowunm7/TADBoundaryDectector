@@ -3,7 +3,7 @@
 
 Detection of boundaries of TADs (Topologically associated domains) using Deep Learning
 
-## Files
+## Example Sequence Files 
 
 dm3.kc167.tads.h5
 
