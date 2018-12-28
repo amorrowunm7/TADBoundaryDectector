@@ -6,7 +6,11 @@ Detection of boundaries of TADs (Topologically associated domains) using Deep Le
 
 ## Models.py
 
-Contains the deep learning models
+Contains the deep learning models as python functions.
+Depends on
+- TensorFlow
+- Keras
+- Python >= 3
 
 ## Example Sequence Files 
 
