@@ -13,8 +13,8 @@ Depends on
 
 ## Example Sequence Files 
 
-dm3.kc167.tads.h5
-
-contains the training DNA sequences (x_train and y_train), validation sequences (x_val, y_val), and the testing sequences (x_test, y_test) with one-hot encoding.
-`
+The 'dm3.kc167.example.h5' contains numpy matrices in one-hot encoding format for the training DNA sequences
+- training sequences and class labels (0 or 1) x_train and y_train 
+- validation sequences and class labels (0 or 1) x_val and y_val
+- testing sequences and class labels (0 or 1) x_test and y_test
 
