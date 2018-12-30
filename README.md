@@ -19,7 +19,14 @@ The 'dm3.kc167.example.h5' contains numpy matrices in one-hot encoding format fo
 - validation sequences and class labels (0 or 1) x_val and y_val
 - testing sequences and class labels (0 or 1) x_test and y_test
 
-## run_models.py
+## Loading the training, testing, and validation data
 
-Contains details on how to train deep learning models defined in 'Models.py'. Uses 'dm3.kc167.example.h5' as the data file.
-
+import h5py
+filename = 'dm3.kc167.example.h5'
+f = h5py.File(filename, 'r')
+x_train = np.array(f['x_train'])
+x_test = np.array(f['x_test'])
+x_val = np.array(f['x_val'])
+y_train = np.array(f['y_train'])
+y_test = np.array(f['y_test'])
+y_val= np.array(f['y_val'])
