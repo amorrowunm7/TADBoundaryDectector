@@ -23,17 +23,10 @@ The 'dm3.kc167.example.h5' contains numpy matrices in one-hot encoding format fo
 
 import h5py
 filename = 'dm3.kc167.example.h5'
-
 f = h5py.File(filename, 'r')
-
 x_train = np.array(f['x_train'])
-
 x_test = np.array(f['x_test'])
-
 x_val = np.array(f['x_val'])
-
 y_train = np.array(f['y_train'])
-
 y_test = np.array(f['y_test'])
-
 y_val= np.array(f['y_val'])
