@@ -18,9 +18,13 @@ Contains the following model architectures \
 | --------------- | ------------------                   |
 | one_CNN         | 1 x {CNN, Maxpooling}                |
 | two_CNN         | 2 x {CNN, Maxpooling}                |
-| three_CNN         3 1 x {CNN, Maxpooling}                |
+| three_CNN       |  3 1 x {CNN, Maxpooling}                |
 | four_CNN         | 4 x {CNN, Maxpooling}                |
-| eight_CNN         | 1 x {CNN, Maxpooling}                |
+| eight_CNN         | 2xCNN, {CNN,pooling}, 2xCNN, {CNN,pooling}, CNN, {CNN,pooling}             |
+| one_CNN_LSTM       | 1 x {CNN, Maxpooling},1 bidirectional LSTM layer                |
+| two_CNN_LSTM         | 2 x {CNN, Maxpooling}, 1 bidirectional LSTM layer               |
+| three_CNN_LSTM       |  3 1 x {CNN, Maxpooling}, 1 bidirectional LSTM layer               |
+| four_CNN_LSTM         | 4 x {CNN, Maxpooling}, 1 bidirectional LSTM layer                |
 
 ## dm3.kc167.example.h5
 
