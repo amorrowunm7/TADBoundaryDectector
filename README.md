@@ -32,7 +32,7 @@ x_test = np.array(f['x_test']) \
 x_val = np.array(f['x_val']) \
 y_train = np.array(f['y_train']) \
 y_test = np.array(f['y_test']) \
-y_val= np.array(f['y_val']) \
+y_val= np.array(f['y_val']) 
 
 ## Setting some parameters
 INPUT_SHAPE = x_train.shape[1:3] \
@@ -43,9 +43,28 @@ outputFile = 'dm3.kc167' \
 
 ## Training CNN models
 
+- Note that training each model will take a couple of hours.
+- It will automatically generate a 'hdf5' file that will store the best model, and a '.txt' file that contains the optimization history.
+- It will also print out evaluation metrics on the training and testing data using the best model.
+
 import Models\
 Models.one_CNN(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,outputFile)\
 Models.two_CNN(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,outputFile)\
 Models.three_CNN(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,outputFile)\
 Models.four_CNN(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,outputFile)\
-Models.eight_CNN(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,outputFile)\
+Models.eight_CNN(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,outputFile)
+
+## Training CNN_LSTM models
+
+- Note that training each model will take a couple of hours.
+- It will automatically generate a 'hdf5' file that will store the best model, and a '.txt' file that contains the optimization history.
+- It will also print out evaluation metrics on the training and testing data using the best model.
+
+import Models\
+Models.one_CNN(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,outputFile)\
+Models.two_CNN(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,outputFile)\
+Models.three_CNN(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,outputFile)\
+Models.four_CNN(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,outputFile)\
+Models.eight_CNN(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,outputFile)
+
+
