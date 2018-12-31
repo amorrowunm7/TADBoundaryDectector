@@ -1,4 +1,5 @@
 
+
 # TADBoundaryDectector
 
 Detection of boundaries of TADs (Topologically associated domains) using Deep Learning
@@ -12,7 +13,9 @@ Depends on
 - Python >= 3
 
 Contains the following model architectures \
+
 |Python function | Model architecture |
+| one-CNN        |                    |
 
 
 ## dm3.kc167.example.h5
