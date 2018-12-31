@@ -11,6 +11,9 @@ Depends on
 - Keras
 - Python >= 3
 
+Contains the following model architectures \
+|Python function | Model architecture |
+
 
 ## dm3.kc167.example.h5
 
