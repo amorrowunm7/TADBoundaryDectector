@@ -14,8 +14,9 @@ Depends on
 
 Contains the following model architectures \
 
-|Python function | Model architecture |
-| one-CNN        |                    |
+| Python function | Model architecture |
+| --------------- | ------------------ |
+| one-CNN         |                     |
 
 
 ## dm3.kc167.example.h5
