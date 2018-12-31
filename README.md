@@ -38,7 +38,9 @@ The 'dm3.kc167.example.h5' contains numpy matrices in one-hot encoding format fo
 - testing sequences and class labels (0 or 1) x_test and y_test
 
 x_train, x_val, and x_test are 3-dimensional matrices\
-y_train, y_val, and y_test are 1-dimensional matrices.
+y_train, y_val, and y_test are 1-dimensional matrices \
+
+To convert DNA sequences in fasta file format to one-hot encoded matrices and to save it as h5 files, see https://github.com/lincshunter/DeepLncRNABinder
 
 ## Loading the training, testing, and validation data
 
