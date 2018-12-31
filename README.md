@@ -39,7 +39,7 @@ INPUT_SHAPE = x_train.shape[1:3] \
 KERNEL_SIZE = 9 \
 LEARNING_RATE = 0.001 \
 NUM_KERNEL = 64 \
-outputFile = 'dm3.kc167' \
+outputFile = 'dm3.kc167' 
 
 ## Training CNN models
 
@@ -60,11 +60,17 @@ Models.eight_CNN(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_S
 - It will automatically generate a 'hdf5' file that will store the best model, and a '.txt' file that contains the optimization history.
 - It will also print out evaluation metrics on the training and testing data using the best model.
 
+LSTM_UNITS = 40
 import Models\
-Models.one_CNN(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,outputFile)\
-Models.two_CNN(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,outputFile)\
-Models.three_CNN(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,outputFile)\
-Models.four_CNN(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,outputFile)\
-Models.eight_CNN(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,outputFile)
+Models.one_CNN_LSTM(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,LSTM_UNITS,outputFile)
+Models.two_CNN_LSTM(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,LSTM_UNITS,outputFile)
+Models.three_CNN_LSTM(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,LSTM_UNITS,outputFile)
+Models.four_CNN_LSTM(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,LSTM_UNITS,outputFile)
+
+## Training CNN_Dense models
+
+- Note that training each model will take a couple of hours.
+- It will automatically generate a 'hdf5' file that will store the best model, and a '.txt' file that contains the optimization history.
+- It will also print out evaluation metrics on the training and testing data using the best model.
 
 
