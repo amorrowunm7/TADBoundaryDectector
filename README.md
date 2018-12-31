@@ -73,7 +73,7 @@ Models.four_CNN_LSTM(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INP
 - It will automatically generate a 'hdf5' file that will store the best model, and a '.txt' file that contains the optimization history.
 - It will also print out evaluation metrics on the training and testing data using the best model.
 
-NUM_DENSE_LAYERS=2
+NUM_DENSE_LAYERS=2 \
 import Models \
 Models.one_CNN_Dense(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,NUM_DENSE_LAYERS,outputFile)
 
