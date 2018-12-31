@@ -24,15 +24,15 @@ y_train, y_val, and y_test are 1-dimensional matrices.
 
 ## Loading the training, testing, and validation data
 
-import h5py
-filename = 'dm3.kc167.example.h5'
-f = h5py.File(filename, 'r')
-x_train = np.array(f['x_train'])
-x_test = np.array(f['x_test'])
-x_val = np.array(f['x_val'])
-y_train = np.array(f['y_train'])
-y_test = np.array(f['y_test'])
-y_val= np.array(f['y_val'])
+import h5py \
+filename = 'dm3.kc167.example.h5' \
+f = h5py.File(filename, 'r') \
+x_train = np.array(f['x_train']) \
+x_test = np.array(f['x_test']) \
+x_val = np.array(f['x_val']) \
+y_train = np.array(f['y_train']) \
+y_test = np.array(f['y_test']) \
+y_val= np.array(f['y_val']) \
 
 ## Setting some parameters
 INPUT_SHAPE = x_train.shape[1:3] \
@@ -43,9 +43,9 @@ outputFile = 'dm3.kc167' \
 
 ## Training CNN models
 
-import Models \
-Models.one_CNN(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,outputFile) \
-Models.two_CNN(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,outputFile) \
-Models.three_CNN(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,outputFile) \
-Models.four_CNN(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,outputFile) \
-Models.eight_CNN(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,outputFile) \
+import Models\
+Models.one_CNN(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,outputFile)\
+Models.two_CNN(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,outputFile)\
+Models.three_CNN(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,outputFile)\
+Models.four_CNN(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,outputFile)\
+Models.eight_CNN(x_train,y_train,x_test,y_test,x_val,y_val,LEARNING_RATE,INPUT_SHAPE,KERNEL_SIZE,NUM_KERNEL,outputFile)\
