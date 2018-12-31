@@ -25,7 +25,7 @@ Contains the following model architectures
 | two_CNN_LSTM         | 2 x {CNN, Maxpooling}, 1 bidirectional LSTM layer               |
 | three_CNN_LSTM       |  3 1 x {CNN, Maxpooling}, 1 bidirectional LSTM layer               |
 | four_CNN_LSTM         | 4 x {CNN, Maxpooling}, 1 bidirectional LSTM layer                |
-| one_CNN_Dense       | 1 x {CNN, Maxpooling},1 bidirectional LSTM layer                |
+| one_CNN_Dense       | 1 x {CNN, Maxpooling}, Dense Layer(s)            |
 | two_CNN_Dense        | 2 x {CNN, Maxpooling}, Dense Layer(s)               |
 | three_CNN_Dense       |  3 1 x {CNN, Maxpooling}, Dense Layer(s)               |
 | four_CNN_Dense       | 4 x {CNN, Maxpooling}, Dense Layer(s)                |
