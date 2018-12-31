@@ -15,9 +15,12 @@ Depends on
 Contains the following model architectures \
 
 | Python function | Model architecture |
-| --------------- | ------------------ |
-| one-CNN         |                     |
-
+| --------------- | ------------------                   |
+| one_CNN         | 1 x {CNN, Maxpooling}                |
+| two_CNN         | 2 x {CNN, Maxpooling}                |
+| three_CNN         3 1 x {CNN, Maxpooling}                |
+| four_CNN         | 4 x {CNN, Maxpooling}                |
+| eight_CNN         | 1 x {CNN, Maxpooling}                |
 
 ## dm3.kc167.example.h5
 
